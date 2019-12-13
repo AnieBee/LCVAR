@@ -1,0 +1,126 @@
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+    font-size: 14pt;
+  font-size: 0.5em;
+}
+ 
+ slides > slide.title-slide hgroup h1 {
+    /* this is for title */
+      font-weight: bold;
+      font-size: 33pt;
+      line-height: normal;
+      color:#CC0000; 
+    }
+
+ slides > slide.title-slide hgroup h2 {
+   /* this is for subtitle */
+      font-weight: bold;
+      font-size: 22pt;
+      line-height: normal;
+      color:#CC0000;
+    }
+    
+ slides > slide.title-slide hgroup p {
+    /* this is for author on title slide */
+      font-size: 21pt;
+       color: black; 
+       line-height: normal;
+    }
+.bigg {
+    color: black; 
+    font-size: 31pt;
+}
+
+.larger {
+    color: black; 
+    font-size: 29pt;
+}
+.large {
+    color: black; 
+    font-size: 13pt;
+}
+.gdbar img {
+  width: 312px !important;
+  height: 145px !important;
+}
+
+.gdbar {
+  width: 400px !important;
+  height: 160px !important;
+}
+
+ /* slides > slide:not(.nobackground):before {
+  width: 1px;
+  height: 1px;
+  background-size: 1px 1px;
+   
+} */
+
+slides > slide.backdrop {
+  background: white;
+}
+
+
+.footer {
+    color: black; 
+    position: fixed; top: 80%;
+    text-align:center; width:50%;
+}
+
+
+.UniRed {
+     color:#CC0000;
+}
+
+.RYB {
+     color:#0000FF;
+}
+
+.noShadow {
+    color: white; 
+    background: #eee;
+}
+figure {
+	overflow: hidden;
+	background: #eee;
+	padding: 5%;
+	border-radius: 3px;
+}
+
+figure img {
+	width: 10%;
+	border-radius: 3px;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 1px;
+  height: 1px;
+  background-size: 1px 1px;
+
+}
+
+.a {
+  font-size: 150%;
+  color: #CC0000; 
+}
+
+.b {
+  color: blue; 
+}
+
+.black {
+  font-size: 150%;
+  color: black; 
+}
+.box-1 {
+		background-color: white;
+		height: 60px;
+	}
+	
+	
+	.box-2 {
+		background-color: white;
+		width: 10px;
+	}
+	

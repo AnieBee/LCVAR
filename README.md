@@ -1,6 +1,6 @@
 LCVARclust Example
 ================
-Anja Franziska Ernst </br> a.f.ernst\[at\]rug.nl
+Anja Franziska Ernst </br> a.f.ernst\[at\]rug.nl </br>
 December 12, 2019 </br>
 
 </br> </br> This document illustrates how to fit a latent class vector-autoregressive model to a time series using the LCVARclust R function.
