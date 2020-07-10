@@ -8,8 +8,9 @@ calculateCoefficientsForRandoAndRational <- function(Covariates, K, N, nDepVar, 
     WIndividual = array(NA, dim = c(nDepVar, PersEnd[N]))
     for(i in 1:N)
     {
-        BIndividual[ , , i] = (Y[ , PersStart[i]:PersEnd[i]] %*% t(X[ , PersStart[i]:PersEnd[i]])) %*% ginv(X[ , PersStart[i]:PersEnd[i]] %*% t(X[ , PersStart[i]:PersEnd[i]]))
-        WIndividual[ , (PersStart[i]):(PersEnd[i])] = Y[ , (PersStart[i]):(PersEnd[i])] - (BIndividual[ , , i] %*% X[ , (PersStart[i]):(PersEnd[i])])
+        BIndividual[ , , i] = (Y[ , PersStart[i]:PersEnd[i]] %*% t(X[ , PersStart[i]:PersEnd[i], drop = FALSE])) %*%
+            ginv(X[ , PersStart[i]:PersEnd[i], drop = FALSE] %*% t(X[ , PersStart[i]:PersEnd[i], drop = FALSE]))
+        WIndividual[ , (PersStart[i]):(PersEnd[i])] = Y[ , (PersStart[i]):(PersEnd[i])] - (BIndividual[ , , i] %*% X[ , (PersStart[i]):(PersEnd[i]), drop = FALSE])
     }
     for(i in 1:N)
     {
