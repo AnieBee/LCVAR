@@ -29,6 +29,8 @@ LCVARclust <- function(Data, yVars, Time, ID, xContinuous = NULL, xFactor = NULL
     stopifnot(smallestClN > 1) # Smallest clustersize that is allowed
     # smallestClN is used in checkComponentsCollapsed
     stopifnot(Clusters > 1) # So far this only works for Cluster numbers above 1
+    stopifnot(length(yVars) > 1) # So far only multivariate time-series are implemented
+
 
 
 
